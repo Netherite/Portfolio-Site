@@ -1,0 +1,117 @@
+
+
+@font-face {
+    font-family: GloriaRocha;
+    src: url('/Users/sheridanlugo/Portfolio-Site/GloriaRocha-Regular.otf');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Cotta'; 
+    src: url("assets/Cotta-Free.otf"); 
+}
+
+* {
+    margin: 0px; 
+    text-decoration: none;
+    font-size: 1rem; 
+}
+
+body {
+    background-color: var(--brandGreen); /* Your desired background color */
+}
+
+.full-span {
+    width: 100%; 
+    text-align: center;
+    place-content: center;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    padding: 0px;
+    font-family: 'open sans';
+    color: white; 
+}
+
+.navdiv {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ul > li, button{
+    padding: 0px 20px 0px 0px; 
+
+ }
+
+ ul {
+    padding: 0px;
+ }
+
+li { 
+    list-style: none;
+    display: inline-block;
+}
+
+button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: white;
+    color: white; 
+    border-style: solid; 
+}
+
+button a {
+    color: rgb(255, 255, 255); 
+    font-size: 1rem;
+}
+
+/* For each section of the website, like hero, gallery, testimonials, etc */
+section {
+   width: 100%;
+   margin: 0px auto;
+   overflow: hidden;
+}
+
+
+.full-span:after {
+    div:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+}
+
+.bar {
+    width: 10vw;
+    height: 105vh;
+    background-color: #1a1a1a;
+}
+
+.counter 
+{
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100;
+    color: white;
+    font-size: 3rem;
+}
+
+
+

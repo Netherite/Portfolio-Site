@@ -1,0 +1,149 @@
+/* 
+    Section 
+        Section wrapper- display: grid 
+            lottie- grid-display: 1/1; 
+            hero-grid- grid-display: 1/1; 
+*/ 
+
+.hero-section {
+    padding-top: 0px; 
+    display: grid; 
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    background-image: linear-gradient(#17332C, #17332C, #000000);
+}
+
+#lottie {
+    grid-area: 1/1;
+}
+
+.hero-wrapper {
+    visibility: hidden; /* Will toggle visbility back on upon js load with gsap */
+    padding: 0px 20px; 
+    width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 0px; 
+    overflow: hidden;
+    grid-area: 1/1;
+}
+
+.hero-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    place-items: center;
+    margin-top: 60px;
+}
+
+.hero-grid-container > img {
+    width: 100%; 
+}
+
+/***** Subheadings *****/
+
+.hero-grid-container > h2 {
+    font-family: 'open sans';
+    font-weight: 300;
+    color:  white; 
+    font-size: 2.5rem; 
+}
+
+.hero-grid-container > h3 {
+    font-family: 'open sans';
+    font-weight: 300;
+    color:  white; 
+    font-size: 1.5rem; 
+}
+
+.hero-grid-container > h2, h2 .line {
+    font-family: 'open sans';
+    font-weight: 300;
+    color:  white; 
+    font-size: 2.5rem; 
+}
+
+.hero-grid-container > h3, h3 .line {
+    font-family: 'open sans';
+    font-weight: 300;
+    color:  white; 
+    font-size: 1.5rem;
+}
+
+/*****************/
+
+h1, h1 .line, h1 .word, h1 .char  {
+    padding-top: 20px; 
+    font-family: 'Noto Serif Display';
+    letter-spacing: .7vw;
+    font-size: 9.2vw;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+    margin: 0px;
+    line-height: 8.5rem;
+    color: white; 
+}
+
+.char {
+    transform: translateY(200px);
+    transition: transform 0s;
+}
+
+.line {
+    transform: translateY(300px);
+}
+
+#right-column, #left-column {
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+}
+
+/*Fairy Image */
+#fairy {
+    max-width: 100%;
+    grid-area: 1/2;
+    z-index: 1;
+}
+
+#partial-circle {
+    grid-area: 1/2;
+    width: 70%; 
+    z-index: -1;
+    transform: translateY(-50px);
+}
+
+.centered-contents-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;  
+}
+
+#wave {
+    width: 110vw; 
+    position: relative; 
+    z-index: -1;
+    overflow: hidden;
+    top: 0; 
+}
+
+/* Ripple effect 
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    transform: scale(0);
+    animation: ripple-effect 1s ease-out forwards;
+  }
+  
+  @keyframes ripple-effect {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  */ 
